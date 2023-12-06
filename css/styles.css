@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400;500&family=Space+Mono&display=swap');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*-------------*/
+
+.header-light {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-header {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+/* 100vh el 100% de la altura de la ventana gráfica
+ o la altura completa de la pantalla.*/
+
+.main {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.switch span {
+    font-weight: 500;
+}
+
+.slider-button {
+    width: 40px;
+    border-radius: 15px;
+    background-color: lightgray;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.switch-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-image: url(../assets/img/sol.png);
+    background-color: lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-text-font img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-text-font h2 {
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.image-text-font p {
+    text-align: justify;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+article {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+/*empezamos con el modo Dark....creo*/
+
+
+/* div class=.switch-circle*/
+
+.dark-switch-circle {
+    transform: translate(30px);
+    background-image: url(../assets/img/luna.png);
+}
+
+
+/*Titulo class=title-header*/
+
+.dark-title-header {
+    background-color: rgb(255, 234, 0);
+}
+
+
+/*Letras Darkmode class=slider*/
+
+.dark-slider {
+    color: white;
+}
+
+
+/*El main class=main*/
+
+.dark-main {
+    background-color: black;
+}
+
+
+/*section h2 class=image-text-font */
+
+.dark-image-text-font h2 {
+    color: rgb(255, 234, 0);
+}
+
+
+/*section p class=image-text-font */
+
+.dark-image-text-font p {
+    color: white;
+}
