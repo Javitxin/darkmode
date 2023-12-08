@@ -171,7 +171,7 @@ body {
 }
 
 .slider-button {
-    width: 40px;
+    width: 50px;
     border-radius: 15px;
     background-color: lightgray;
     padding: 5px;
@@ -179,13 +179,15 @@ body {
 }
 
 .switch-circle {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
+    background-color: yellow;
     background-image: url(../assets/img/sol.png);
-    background-color: lightgray;
     background-position: center;
+    background-size: 15px;
     background-repeat: no-repeat;
+    transition: transform .5s ease-out, background-color .5s ease-out;
 }
 
 .image-text-font img {
@@ -211,6 +213,13 @@ article {
     max-width: 800px;
 }
 
+.title-header,
+h2,
+span,
+p {
+    transition: color 0.5s ease-in-out;
+}
+
 
 /*empezamos con el modo Dark....creo*/
 
@@ -219,6 +228,7 @@ article {
 
 .dark-switch-circle {
     transform: translate(30px);
+    background-color: rgba(0, 170, 255, 0.82);
     background-image: url(../assets/img/luna.png);
 }
 
@@ -226,7 +236,7 @@ article {
 /*Titulo class=title-header*/
 
 .dark-title-header {
-    background-color: rgb(255, 234, 0);
+    color: rgb(255, 234, 0);
 }
 
 
@@ -239,7 +249,8 @@ article {
 
 /*El main class=main*/
 
-.dark-main {
+.dark-main,
+.dark-body {
     background-color: black;
 }
 
